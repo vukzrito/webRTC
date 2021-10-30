@@ -6,7 +6,7 @@ const io = require('socket.io')(server)
 const { v4: uuidv4 } = require('uuid');
 const { PeerServer } = require('peer');
 
-const peerServer = PeerServer({ port: 3001 });
+const peerServer = PeerServer({ port: 8080 });
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
